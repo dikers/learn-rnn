@@ -49,6 +49,7 @@ dataset
 */data/
 */data/*
 ./data/*
+output/
 */output/*
 */output
 */tensorflow/image/
