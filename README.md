@@ -1,7 +1,7 @@
 # 学习RNN神经网络
 
 
-## 时间序列问题
+循环神经网络可以用来解决各种序列问题， 本项目给出一些常见的循环神经网络的使用场景和代码实现。 
 
 ![image](https://dikers-data.s3.cn-northwest-1.amazonaws.com.cn/images/rnn.png)
 
@@ -10,8 +10,10 @@
 
 ## 1. 用numpy实现简单的RNN
 
-实现一个简单的RNN， 预测字符串序列, 理解一些常用的矩阵运算， 以及前向反向传播
+实现一个简单的RNN， 预测字符串序列, 理解一些常用的矩阵运算， 以及前向、反向传播
+
 ![image](https://pic1.zhimg.com/80/v2-4058db6817f202ddc3fc41cb3683a744_1440w.png)
+
 
 
 
@@ -21,20 +23,20 @@
 * 熟悉Tensorflow 构建网络模型的常规流程。 
 
 
+
 ## 3. 使用LSTM 对mnist 手写数字集进行分类
 
-
-![image](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1585420089066&di=b7aecd71e3249cf1c82c95858ad0cf90&imgtype=0&src=http%3A%2F%2Fpic4.zhimg.com%2Fv2-78abf1f3cfb557f9e4dd2fbb9c135ecc_b.jpg)
+将每行数据看做时序序列对图像进行分类。 
 
 ![image](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1585420330395&di=fe0f331f114848935b109a657958fd6c&imgtype=0&src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F6847845171%2F1000)
 
-将每行数据看做时序序列对图像进行分类。 
 
 
 
 ## 4. 实现自己的LSTM 
 
-通过实现LSTM， 理解循环网络的内部结构， 加深理解。 
+通过实现LSTM， 理解LSTM cell的内部结构， 加深理解。 
+
 
 ![image](https://img2018.cnblogs.com/blog/1575054/201904/1575054-20190412231515774-190310739.png)
 
@@ -53,6 +55,7 @@ A: 678
 
 ## 6. 使用PyTorch实现字符级别的英语文章预测
 
+以下是预测出的文本
 ```
 The moss of the convincing it had been drawing up the people that there was nothing without this way or a single wife as he did not hear
 him or that he was not seeing that she would be a court of the sound of some sound of the position, and to spartly she
@@ -61,7 +64,8 @@ see her and a sundroup times there was nothing this
 father and as she stoop serious in the sound, was a steps of the master, a few sistersily play of his husband. The crowd had no carreated herself, and truets, and shaking up, the pases, and the moment that he was not at the marshal, and the starling the secret were stopping to be
 ```
 
-## 7. 实现了中文文章的分类
+
+## 7. 中文文章的分类
 
 * 熟悉多对一个序列问题的解决方案
 * 熟悉中文文档的分词处理流程
@@ -81,7 +85,8 @@ father and as she stoop serious in the sound, was a steps of the master, a few s
 | 财经 | 5000 |
 
 
-## 8. 实现英语到西班牙的翻译功能
+
+## 8. 英语到西班牙的翻译功能
 
 * 熟悉多对多的序列问题
 * 熟悉Attention模型
@@ -103,14 +108,19 @@ You have a pretty smile.	Tienes una linda sonrisa.
 You have beautiful eyes.	Tienes unos ojos muy bonitos.
 ```
 
-## 9. 自动生成作曲
+
+
+## 9. 自动作曲
 
 * 熟悉声音文件的处理
 * 熟悉声音序列问题的处理方式
 
 
 
-## 10. 通过记忆网络实现问答系统
+## 10. 自动完成阅读理解
+
+通过记忆网络实现问答系统， 记忆网络将信息保存到网络外部， 类比LSTM的长期记忆， 范围和尺度还要更广。 
+
 
 ```
 Daniel moved to the garden . Mary went back to the bathroom .
@@ -158,6 +168,7 @@ A: hallway
     "total_acc_y_",
     "total_acc_z_",
 ```
+
 
 
 
