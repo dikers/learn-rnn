@@ -17,14 +17,22 @@
 
 
 
-## 2. 使用Tensorflow 实现RNN 预测Sin函数图像
+## 2. 对比LSTM 和RNN
+
+* 理解序列问题的数据格式
+* 对比LSTM 处理长序列问题的能力
+
+
+
+
+
+## 3. 使用Tensorflow 实现RNN 预测Sin函数图像
 
 * 理解序列问题数据处理方式， X 和y的数据格式。 
 * 熟悉Tensorflow 构建网络模型的常规流程。 
 
 
-
-## 3. 使用LSTM 对mnist 手写数字集进行分类
+## 4. 使用LSTM 对mnist 手写数字集进行分类
 
 将每行数据看做时序序列对图像进行分类。 
 
@@ -33,7 +41,7 @@
 
 
 
-## 4. 实现自己的LSTM 
+## 5. 实现自己的LSTM 
 
 通过实现LSTM， 理解LSTM cell的内部结构， 加深理解。 
 
@@ -41,7 +49,7 @@
 ![image](https://img2018.cnblogs.com/blog/1575054/201904/1575054-20190412231515774-190310739.png)
 
 
-## 5. 通过Encoder Decoder实现 简单问答系统
+## 6. 通过Encoder Decoder实现 简单问答系统
 
 序列到序列的模型， 核心就是研究如何处理序列的问题。 
 
@@ -53,19 +61,21 @@ A: 678
 
 
 
-## 6. 使用PyTorch实现字符级别的英语文章预测
+## 7. 使用PyTorch实现字符级别的英语文章预测
 
 以下是预测出的文本
 ```
 The moss of the convincing it had been drawing up the people that there was nothing without 
-this way or a single wife as he did not hear him or that he was not seeing that she would be a court of the sound of some sound of the position, and to spartly she
-could
-see her and a sundroup times there was nothing this
-father and as she stoop serious in the sound, was a steps of the master, a few sistersily play of his husband. The crowd had no carreated herself, and truets, and shaking up, the pases, and the moment that he was not at the marshal, and the starling the secret were stopping to be
+this way or a single wife as he did not hear him or that he was not seeing that she would 
+be a court of the sound of some sound of the position, and to spartly she could see her 
+and a sundroup times there was nothing this father and as she stoop serious in the sound, 
+was a steps of the master, a few sistersily play of his husband. The crowd had no carreated
+herself, and truets, and shaking up, the pases, and the moment that he was not at the marshal,
+and the starling the secret were stopping to be
 ```
 
 
-## 7. 中文文章的分类
+## 8. 中文文章的分类
 
 * 熟悉多对一个序列问题的解决方案
 * 熟悉中文文档的分词处理流程
@@ -86,7 +96,7 @@ father and as she stoop serious in the sound, was a steps of the master, a few s
 
 
 
-## 8. 英语到西班牙的翻译功能
+## 9. 英语到西班牙的翻译功能
 
 * 熟悉多对多的序列问题
 * 熟悉Attention模型
@@ -110,14 +120,14 @@ You have beautiful eyes.	Tienes unos ojos muy bonitos.
 
 
 
-## 9. 自动作曲
+## 10. 自动作曲
 
 * 熟悉声音文件的处理
 * 熟悉声音序列问题的处理方式
 
 
 
-## 10. 自动完成阅读理解
+## 11. 自动完成阅读理解
 
 通过记忆网络实现问答系统， 记忆网络将信息保存到网络外部， 类比LSTM的长期记忆， 范围和尺度还要更广。 
 
@@ -132,7 +142,9 @@ A: garden
 
 
 ```
-John went to the bedroom . Daniel journeyed to the kitchen . Daniel journeyed to the hallway . Mary travelled to the bathroom . John travelled to the garden . Daniel journeyed to the office . Mary moved to the bedroom . Sandra went back to the hallway .
+John went to the bedroom . Daniel journeyed to the kitchen . Daniel journeyed to the hallway . 
+Mary travelled to the bathroom . John travelled to the garden . Daniel journeyed to the office .
+Mary moved to the bedroom . Sandra went back to the hallway .
 
 Q: Where is Sandra ?
 
@@ -141,7 +153,7 @@ A: hallway
 ```
 
 
-## 11. 通过手机传感器预测人类运动
+## 12. 通过手机传感器预测人类运动
 
 熟悉时间序列的处理方式
 
@@ -172,7 +184,7 @@ A: hallway
 
 
 
-## 12. 通过图片生成文字解说
+## 13. 通过图片生成文字解说
 
 * 了解一对多的序列处理问题
 * 使用CNN 提取图片的特征，然后输入到LSTM里面进行Decoder。
@@ -181,3 +193,15 @@ A: hallway
 ![image](./assets/im2txt.jpg)
  
  
+
+
+## 14. 生成周杰伦的歌词
+
+* 使用Mxnet实现LSTM
+* 熟悉LSTM 的公式
+
+> - 喜欢 问候我 谁是神枪手 巫师 他念念 有词的 对酋长下诅咒 还我骷髅头 这故事 告诉我 印地安的传说 
+> - 不分开 你已经离开我 不知不觉 我跟了这节奏 后知后觉 又过了一个秋 后知后觉 我该好好生活 我该好好生活
+
+
+![image](https://pic2.zhimg.com/v2-556c74f0e025a47fea05dc0f76ea775d_1200x500.jpg)
