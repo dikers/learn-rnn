@@ -39,9 +39,8 @@
 ```
 
  s列和m列想乘 再求和 等于y = 1.1269， 其中有两个m是1，剩余都为0
+ 
  这个序列的长度会达到比较长， 如果用普通RNN很难发现规律，体验LSTM的威力
-
-
 
 
 
@@ -64,11 +63,12 @@
 
 通过实现LSTM， 理解LSTM cell的内部结构， 加深理解。 
 
-
+![image](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1586192304337&di=ffda304e49c896afcdd4347fa8b6ad7c&imgtype=0&src=http%3A%2F%2Ffile.elecfans.com%2Fweb1%2FM00%2FA4%2FE3%2Fo4YBAF1o35KADzDyAAC0_ErNSG8845.png)
 ![image](https://img2018.cnblogs.com/blog/1575054/201904/1575054-20190412231515774-190310739.png)
 
 
-## 6. 通过Encoder Decoder实现 简单问答系统
+
+## 6. 通过Encoder Decoder实现问答系统
 
 序列到序列的模型， 核心就是研究如何处理序列的问题。 
 
@@ -221,7 +221,14 @@ A: hallway
 
 以下是在小数据集上，迭代了500次以后生成的歌词
 >  喜欢 问候我 谁是神枪手 巫师 他念念 有词的 对酋长下诅咒 还我骷髅头 这故事 告诉我 印地安的传说 
+>  
 >  不分开 你已经离开我 不知不觉 我跟了这节奏 后知后觉 又过了一个秋 后知后觉 我该好好生活 我该好好生活
 
 
-![image](https://pic2.zhimg.com/v2-556c74f0e025a47fea05dc0f76ea775d_1200x500.jpg)
+
+## 15. 图像生成HTML代码
+
+* 了解CNN和RNN的混合使用
+* Keras 使用多输入模型
+
+![image](https://camo.githubusercontent.com/7aee7deacf38b8f9a2a230da4efbd96a96840b83/68747470733a2f2f692e696d6775722e636f6d2f4c446d6f4c4c562e706e67)
